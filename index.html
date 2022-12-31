@@ -336,15 +336,15 @@ else if (
       texts.appendChild(p);
     }
   else if (
-      text.includes("open YouTube") ||
-      text.includes("YouTube")
+      text.includes("open YouTube")
     ){
       p = document.createElement("p");
       p.classList.add("replay");
       let finalText="Opening...just a minute";
       responsiveVoice.speak(finalText);
       p.innerText=finalText;
-      texts.appendChild(p);      window.open("https://www.youtube.com/?app=desktop");
+      texts.appendChild(p);     
+ window.open("https://www.youtube.com/?app=desktop");
     }
    else if (
       text.includes("are you listening") ||
@@ -355,17 +355,6 @@ else if (
       let finalText="Yes i'm Listening...tell me something new";
       responsiveVoice.speak(finalText);
       p.innerText = finalText;
-      texts.appendChild(p);
-    }
-  else if (
-      text.includes("today weather") ||
-      text.includes("Today weather")
-    ){
-      p = document.createElement("p");
-      p.classList.add("replay");
-      let finalText="Just a minute , i'm showing";
-      p.innerText = finalText;    
-      responsiveVoice.speak(finalText); window.open("https://www.google.com/search?q=weather+today&oq=weather+today&aqs=chrome..69i57j0i433i512j0i512j0i131i433i512j0i512j0i433i512j0i131i433i512j0i433i512.4132j1j4&client=ms-android-oppo-rev1&sourceid=chrome-mobile&ie=UTF-8");
       texts.appendChild(p);
     }
   else  if (
@@ -410,15 +399,6 @@ else if (
       p.innerText =finalText;
       texts.appendChild(p);
       responsiveVoice.speak(finalText);
-    }
-   else if (
-      text.includes("play song") ||
-      text.includes("song")||text.includes("Song")
-    ){
-      p = document.createElement("p");
-      p.classList.add("replay");
-      p.innerText = "here is playing something pop of famouse Mickel jackson";
-      texts.appendChild(p);      window.open("https://youtu.be/VA5hpF7PH1Q");
     }
      else if (text.includes("hi") ||
       text.includes("Hi")||text.includes("hello")
