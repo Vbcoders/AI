@@ -506,6 +506,12 @@ var start=document.getElementById("start");
 start.innerHTML="Listening....";
 recognition.start();
 }
+function starting(){
+ var p = document.querySelector("p");
+   var finalText="Welcome to the AI Girlfriend , How can I help you ?";
+   p.innerHTML=finalText;
+  responsiveVoice.speak(finalText);
+}
    </script>
    <style>
 button:hover{
