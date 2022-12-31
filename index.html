@@ -480,10 +480,10 @@ else if (
 else if (
       text.includes("Wikipedia")
     ){
-     window.open('https://en.wikipedia.org/wiki/${text.replace("wikipedia","")}',"_blank");
+     window.open(`https://en.wikipedia.org/wiki/${text.replace("wikipedia", "")}`, "_blank");
       p = document.createElement("p");
       p.classList.add("replay");
-      var finalText="One sec...Opening Instagram";
+      var finalText="Here something I found For "+text+" On Wikipedia";
       p.innerText =finalText;
       texts.appendChild(p);
       responsiveVoice.speak(finalText);
