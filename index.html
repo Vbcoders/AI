@@ -484,6 +484,29 @@ else if (
       texts.appendChild(p);
       responsiveVoice.speak(finalText);
     }
+else if (
+      text.includes("Instagram") ||
+      text.includes("open Instagram")||text.includes("instagram")
+    ){
+     window.open("https://instagram.com","_blank");
+      p = document.createElement("p");
+      p.classList.add("replay");
+      var finalText="One sec...Opening Instagram";
+      p.innerText =finalText;
+      texts.appendChild(p);
+      responsiveVoice.speak(finalText);
+    }
+else if (
+      text.includes("wikipedia")
+    ){
+     window.open('https://en.wikipedia.org/wiki/${text.replace("wikipedia","")}',"_blank");
+      p = document.createElement("p");
+      p.classList.add("replay");
+      var finalText="One sec...Opening Instagram";
+      p.innerText =finalText;
+      texts.appendChild(p);
+      responsiveVoice.speak(finalText);
+    }
   else { 
       window.open(`https://www.google.com/search?q=${text.replace(" ", "+")}`, "_blank");
       p = document.createElement("p");
