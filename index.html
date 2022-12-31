@@ -484,13 +484,14 @@ else if (
       texts.appendChild(p);
       responsiveVoice.speak(finalText);
     }
-  else {
+  else { 
+      window.open(`https://www.google.com/search?q=${text.replace(" ", "+")}`, "_blank");
       p = document.createElement("p");
-      p.classList.add("replay");
-      var finalText="Sorry I can't Understand your words please say something Understandable words";
+      p.classList.add("replay");     
+      var finalText="I found some information for " + text + " on google";
       p.innerText =finalText;
       texts.appendChild(p);
-      responsiveVoice.speak(finalText);
+      responsiveVoice.speak(finalText);     
   }
     p = document.createElement("p");
   }
