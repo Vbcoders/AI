@@ -488,6 +488,21 @@ else if (
       texts.appendChild(p);
       responsiveVoice.speak(finalText);
     }
+else if( 
+          text.includes("play") || 
+          text.includes("Song play") ||
+          text.includes("play song") || 
+          text.includes("song play")
+          )
+     { 
+window.open(`https://www.youtube.com/search?q=${text.replace(" ", "+")}`, "_blank");
+  p = document.createElement("p");
+      p.classList.add("replay");     
+      var finalText="I'm Playing " + text + "on Youtube";
+      p.innerText =finalText;
+      texts.appendChild(p);
+      responsiveVoice.speak(finalText);     
+  }
   else { 
       window.open(`https://www.google.com/search?q=${text.replace(" ", "+")}`, "_blank");
       p = document.createElement("p");
